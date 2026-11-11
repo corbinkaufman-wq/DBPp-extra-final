@@ -1,28 +1,21 @@
-# Fly Away Frontend
+Fly Away Frontend
 
-Frontend en React y TypeScript para el sistema de reserva de vuelos Fly Away.
+Este proyecto es el frontend del sistema de reserva de vuelos Fly Away.
+Fue hecho con React y TypeScript.
 
-## Requisitos
+Para usarlo se necesita Node.js 20.19 o una version superior.
+El backend debe estar ejecutandose en http://localhost:8080.
 
-- Node.js 20.19 o superior
-- Backend Fly Away ejecutándose en `http://localhost:8080`
+Primero instalar las dependencias:
 
-## Ejecutar
-
-```bash
 npm install
+
+Luego iniciar el proyecto:
+
 npm run dev
-```
 
-La aplicación se abre en `http://localhost:5173`.
+La pagina se abre en http://localhost:5173.
 
-## Funcionalidades
-
-- Registro e inicio de sesión con JWT
-- Usuario autenticado visible
-- Búsqueda de vuelos por número, aerolínea y fechas
-- Reserva y detalle de vuelos
-- Historial local de reservas por usuario
-- Rutas protegidas y cierre de sesión
-
-Para probar se puede usar `ana.garcia@utec.edu.pe` con la contraseña `Password1`.
+La aplicacion permite registrar usuarios, iniciar sesion, buscar vuelos,
+reservar vuelos, ver el detalle de una reserva y revisar las reservas guardadas.
+Tambien tiene rutas protegidas y la opcion de cerrar sesion.
