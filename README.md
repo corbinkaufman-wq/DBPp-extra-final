@@ -1,5 +1,3 @@
-Fly Away Frontend
-
 Ejecutar primero el backend en http://localhost:8080.
 
 npm install
