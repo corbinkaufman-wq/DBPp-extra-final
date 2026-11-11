@@ -1,0 +1,248 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #17233c;
+  background: #f4f7fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  padding: 11px 18px;
+  background: #2864e8;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: .55;
+  cursor: default;
+}
+
+a {
+  color: #2864e8;
+  text-decoration: none;
+}
+
+.navbar {
+  height: 68px;
+  padding: 0 7%;
+  background: white;
+  border-bottom: 1px solid #dde4ef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.logo {
+  color: #17233c;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.linkButton {
+  background: transparent;
+  color: #2864e8;
+  padding: 0;
+}
+
+.authPage {
+  min-height: calc(100vh - 68px);
+  display: grid;
+  place-items: center;
+  padding: 35px 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e1e7f0;
+  border-radius: 7px;
+  box-shadow: 0 10px 30px rgba(35, 56, 95, .09);
+}
+
+.authCard {
+  width: min(420px, 100%);
+  padding: 35px;
+}
+
+.authCard h1, .pageTitle h1 {
+  margin: 5px 0 25px;
+  font-size: 34px;
+}
+
+.authCard label, .searchForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 17px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #cad4e3;
+  border-radius: 5px;
+  padding: 11px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2864e8;
+}
+
+.authCard > button {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.smallTitle {
+  margin: 0;
+  color: #2864e8;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.formLink {
+  text-align: center;
+  margin: 22px 0 0;
+  font-size: 14px;
+}
+
+.page {
+  width: min(1180px, 92%);
+  margin: 45px auto;
+}
+
+.pageTitle p:last-child {
+  color: #66738a;
+  margin-top: -15px;
+}
+
+.searchForm {
+  margin: 30px 0;
+  padding: 22px;
+  background: white;
+  border: 1px solid #dfe6f1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  align-items: end;
+}
+
+.searchForm label {
+  margin: 0;
+}
+
+.tableBox {
+  overflow-x: auto;
+  background: white;
+  border: 1px solid #dfe6f1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e4e9f1;
+}
+
+th {
+  background: #eef3fb;
+  font-size: 13px;
+}
+
+.error, .success {
+  padding: 12px 15px;
+  border-radius: 4px;
+}
+
+.error {
+  color: #9b2525;
+  background: #ffeded;
+}
+
+.success {
+  color: #176c41;
+  background: #e7f7ef;
+}
+
+.message, .empty {
+  padding: 35px;
+  text-align: center;
+  background: white;
+  border: 1px dashed #b8c4d8;
+}
+
+.bookingDetail {
+  margin: 20px 0;
+  padding: 20px;
+  background: #eaf1ff;
+  border-left: 5px solid #2864e8;
+}
+
+.bookingDetail h2 {
+  margin-top: 0;
+}
+
+.bookingList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.bookingCard {
+  padding: 22px;
+}
+
+.bookingCard span {
+  color: #67748a;
+  font-size: 13px;
+}
+
+.bookingCard h2 {
+  color: #2864e8;
+  font-size: 28px;
+}
+
+@media (max-width: 800px) {
+  .searchForm, .bookingList {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    height: auto;
+    padding: 18px 5%;
+    align-items: flex-start;
+  }
+
+  .navbar nav {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
